@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+string getDayOfWeek(int dayNum){
+   
+    string dayName;
+    
+    switch(dayNum) {
+        case 0:
+        dayName = "Sunday";
+        break;
+        case 1:
+        dayName = "Monday";
+        break; 
+        case 2:
+        dayName = "Tuesday";
+        break; 
+        case 3:
+        dayName = "Wednestay";
+        break; 
+        case 4:
+        dayName = "Thursday";
+        break; 
+        case 5:
+        dayName = "Friday";
+        break;
+        case 6:
+        dayName = "Saturday";
+        break;
+        default:
+        dayName = "Invalid day number";
+    }
+    return dayName;
+}
+int main()
+{
+  // or only 
+  // cout << getDayOfWeek(5); -> specifying the day of the week
+  int dayNum;
+  cout << "insert a day number from 1 to 6 " << endl;
+  cin >> dayNum; 
+  cout << getDayOfWeek(dayNum);
+   return 0;
+}
